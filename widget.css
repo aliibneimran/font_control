@@ -1,0 +1,37 @@
+#fontsize-widget {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #2563eb;
+  border-radius: 50px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  transform: translateY(-50%);
+  gap: 5px;
+}
+
+#fontsize-widget button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  background-color: #1d4ed8;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#fontsize-widget button:hover {
+  background-color: #1e40af;
+}
+
+#fontsize-widget button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
